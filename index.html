@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FetchFast</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-blue-100">
+    <!-- Header -->
+    <header class="text-center py-8">
+      <h1 class="text-4xl font-bold text-blue-900">FetchFast</h1>
+      <p class="text-blue-700 mt-2">A fast and simple alternative to Postman</p>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-blue-800">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+          <!-- Feature 1 -->
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <i class="fas fa-bolt fa-3x text-blue-500"></i>
+            <h3 class="text-lg font-semibold mt-2">Super Fast</h3>
+            <p class="text-blue-600 mt-1">
+              Optimized for speed and efficiency, ensuring quick responses for
+              all your API requests.
+            </p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <i class="fas fa-user-friends fa-3x text-blue-500"></i>
+            <h3 class="text-lg font-semibold mt-2">User-Friendly</h3>
+            <p class="text-blue-600 mt-1">
+              Designed with a focus on usability to provide a seamless
+              experience for developers of all skill levels.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <i class="fas fa-code fa-3x text-blue-500"></i>
+            <h3 class="text-lg font-semibold mt-2">Versatile</h3>
+            <p class="text-blue-600 mt-1">
+              Supports a wide range of HTTP methods and boasts a comprehensive
+              set of features for thorough API testing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshot Section -->
+    <section class="bg-blue-50 py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-blue-800 mb-8">See It in Action</h2>
+        <div class="rounded-lg shadow-xl inline-block">
+          <!-- Replace 'path-to-your-screenshot.png' with the actual path to your screenshot file -->
+          <img
+            src="./screenshot.png"
+            alt="Extension Screenshot"
+            class="rounded-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="bg-white py-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-800">Get the Extension</h2>
+        <p class="text-blue-600 mt-2">Ready to improve your workflow?</p>
+        <a
+          href="./fetchfast.zip"
+          download
+          class="mt-4 inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-blue-600"
+          ><i class="fa fa-download"></i> Download For Free!</a
+        >
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="py-8 bg-blue-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-blue-800">
+          What Users Say
+        </h2>
+        <div class="mt-8 space-y-8">
+          <!-- Testimonial 1 -->
+          <blockquote
+            class="flex flex-col md:flex-row bg-white shadow-lg rounded-lg p-6"
+          >
+            <div class="md:flex-shrink-0">
+              <i class="fas fa-quote-left fa-2x text-blue-300"></i>
+            </div>
+            <div class="mt-4 md:mt-0 md:ml-6 text-left">
+              <p class="text-blue-600">
+                "This extension has streamlined my API testing process
+                significantly. Highly recommend it!"
+              </p>
+              <footer class="mt-2 text-sm text-blue-700">
+                - Jane Doe, Developer
+              </footer>
+            </div>
+          </blockquote>
+          <!-- ... other testimonials ... -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-8 bg-blue-900 text-white text-center">
+      <p class="text-sm mt-4">© 2024 Nexys</p>
+    </footer>
+  </body>
+</html>
