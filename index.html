@@ -12,46 +12,68 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .feature-icon {
+        background: linear-gradient(to right, #8e2de2, #4a00e0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
   </head>
-  <body class="bg-blue-100">
+  <body class="bg-gray-100 text-gray-800">
     <!-- Header -->
-    <header class="text-center py-8">
-      <h1 class="text-4xl font-bold text-blue-900">FetchFast</h1>
-      <p class="text-blue-700 mt-2">A fast and simple alternative to Postman</p>
+    <header
+      class="bg-gradient-to-r from-purple-600 to-blue-500 text-white py-12">
+      <div class="container mx-auto text-center">
+        <h1 class="text-5xl font-bold mb-4">FetchFast</h1>
+        <p class="text-2xl mb-6">The Ultimate Tool for Rapid API Testing</p>
+      </div>
     </header>
 
     <!-- Features Section -->
-    <section class="py-8">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center text-blue-800">Features</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+    <section class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-16 gradient-text">
+          Why Choose FetchFast?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <!-- Feature 1 -->
-          <div class="bg-white p-6 shadow-lg rounded-lg">
-            <i class="fas fa-bolt fa-3x text-blue-500"></i>
-            <h3 class="text-lg font-semibold mt-2">Super Fast</h3>
-            <p class="text-blue-600 mt-1">
-              Optimized for speed and efficiency, ensuring quick responses for
-              all your API requests.
+          <div
+            class="bg-white p-8 shadow-xl rounded-lg text-center transform hover:scale-105 transition-transform duration-300">
+            <i class="fas fa-bolt fa-4x mb-6 feature-icon"></i>
+            <h3 class="text-2xl font-semibold mb-4">Blazing Fast</h3>
+            <p class="text-gray-600">
+              Experience unparalleled speed and efficiency with FetchFast,
+              optimizing your workflow like never before.
             </p>
           </div>
           <!-- Feature 2 -->
-          <div class="bg-white p-6 shadow-lg rounded-lg">
-            <i class="fas fa-user-friends fa-3x text-blue-500"></i>
-            <h3 class="text-lg font-semibold mt-2">User-Friendly</h3>
-            <p class="text-blue-600 mt-1">
-              Designed with a focus on usability to provide a seamless
-              experience for developers of all skill levels.
+          <div
+            class="bg-white p-8 shadow-xl rounded-lg text-center transform hover:scale-105 transition-transform duration-300">
+            <i class="fas fa-user-friends fa-4x mb-6 feature-icon"></i>
+            <h3 class="text-2xl font-semibold mb-4">Intuitive Interface</h3>
+            <p class="text-gray-600">
+              Enjoy a user-friendly interface designed to be accessible for
+              developers of all skill levels.
             </p>
           </div>
           <!-- Feature 3 -->
-          <div class="bg-white p-6 shadow-lg rounded-lg">
-            <i class="fas fa-code fa-3x text-blue-500"></i>
-            <h3 class="text-lg font-semibold mt-2">Versatile</h3>
-            <p class="text-blue-600 mt-1">
-              Supports a wide range of HTTP methods and boasts a comprehensive
-              set of features for thorough API testing.
+          <div
+            class="bg-white p-8 shadow-xl rounded-lg text-center transform hover:scale-105 transition-transform duration-300">
+            <i class="fas fa-code fa-4x mb-6 feature-icon"></i>
+            <h3 class="text-2xl font-semibold mb-4">Highly Versatile</h3>
+            <p class="text-gray-600">
+              Supports all HTTP methods and offers a comprehensive suite of
+              features for thorough API testing.
             </p>
           </div>
         </div>
@@ -59,65 +81,69 @@
     </section>
 
     <!-- Screenshot Section -->
-    <section class="bg-blue-50 py-8">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-blue-800 mb-8">See It in Action</h2>
-        <div class="rounded-lg shadow-xl inline-block">
+    <section class="bg-gradient-to-r from-blue-500 to-purple-600 py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-white mb-16">
+          See FetchFast in Action
+        </h2>
+        <div
+          class="rounded-lg shadow-2xl inline-block overflow-hidden transform hover:scale-105 transition-transform duration-300">
           <!-- Replace 'path-to-your-screenshot.png' with the actual path to your screenshot file -->
           <img
             src="./screenshot.png"
             alt="Extension Screenshot"
-            class="rounded-lg"
-          />
+            class="rounded-lg" />
         </div>
       </div>
     </section>
 
     <!-- Download Section -->
-    <section class="bg-white py-8" id="download">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-blue-800">Get the Extension</h2>
-        <p class="text-blue-600 mt-2">Ready to improve your workflow?</p>
-        <a 
-          href="https://chromewebstore.google.com/detail/http-requester/cphnklgdpghfegmlpihlfhgngfgepiee" 
-          target="_blank" 
-          class="mt-4 ml-4 inline-block bg-green-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-green-600"
-        ><i class="fa-brands fa-chrome"></i> Get it on Chrome Web Store</a>
+    <section class="bg-white py-20" id="download">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Download FetchFast Now</h2>
+        <p class="text-xl mb-12">Elevate your API testing experience today!</p>
+        <a
+          href="https://chromewebstore.google.com/detail/http-requester/cphnklgdpghfegmlpihlfhgngfgepiee"
+          target="_blank"
+          class="bg-purple-500 text-white py-4 px-12 rounded-full text-lg font-medium hover:bg-purple-600 transition-colors duration-300 inline-flex items-center"
+          ><i class="fa-brands fa-chrome mr-2"></i> Get it on Chrome Web
+          Store</a
+        >
       </div>
     </section>
-    
 
     <!-- Testimonials Section -->
-    <section class="py-8 bg-blue-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center text-blue-800">
-          What Users Say
-        </h2>
-        <div class="mt-8 space-y-8">
+    <section class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-16">What Our Users Say</h2>
+        <div class="space-y-12">
           <!-- Testimonial 1 -->
           <blockquote
-            class="flex flex-col md:flex-row bg-white shadow-lg rounded-lg p-6"
-          >
-            <div class="md:flex-shrink-0">
-              <i class="fas fa-quote-left fa-2x text-blue-300"></i>
+            class="flex flex-col md:flex-row bg-white shadow-xl rounded-lg p-8 transform hover:scale-105 transition-transform duration-300">
+            <div class="md:flex-shrink-0 text-center md:text-left">
+              <i class="fas fa-quote-left fa-3x text-purple-300"></i>
             </div>
-            <div class="mt-4 md:mt-0 md:ml-6 text-left">
-              <p class="text-blue-600">
-                "This extension has streamlined my API testing process
-                significantly. Highly recommend it!"
+            <div class="mt-6 md:mt-0 md:ml-8 text-center md:text-left">
+              <p class="text-gray-700 text-xl">
+                "FetchFast has revolutionized my API testing process. It's
+                incredibly fast and easy to use. A must-have tool for every
+                developer!"
               </p>
-              <footer class="mt-2 text-sm text-blue-700">
-                - Jane Doe, Developer
+              <footer class="mt-4 text-sm text-gray-500">
+                - Jane Doe, Senior Developer
               </footer>
             </div>
           </blockquote>
-          <!-- ... other testimonials ... -->
+          <!-- Additional testimonials can be added here -->
         </div>
       </div>
     </section>
 
-    <footer class="py-8 bg-blue-900 text-white text-center">
-      <p class="text-sm mt-4">© 2024 Nexys</p>
+    <!-- Footer -->
+    <footer
+      class="py-12 bg-gradient-to-r from-purple-600 to-blue-500 text-white text-center">
+      <p class="text-lg">© 2024 FetchFast | All Rights Reserved</p>
+      <p class="text-sm mt-4">Crafted with ❤️ by Nexys</p>
     </footer>
   </body>
 </html>
